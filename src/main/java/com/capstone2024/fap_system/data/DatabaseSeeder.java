@@ -730,6 +730,7 @@ public class DatabaseSeeder implements CommandLineRunner {
     private Student createStudent(int index, String studentCode, String batch, String fullName, Major major, int currentTerm, Department department, Specialization specialization) {
         String email = ((index % 2 == 0) ? "sm" + index : "sf" + index);
         Gender gender = ((index % 2 != 0)? Gender.MALE : Gender.FEMALE);
+        email += "@gmail.com";
 
         if(index == 2) {
             email = "phattvse170042@fpt.edu.vn";
