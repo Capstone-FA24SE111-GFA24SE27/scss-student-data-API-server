@@ -582,33 +582,32 @@ public class DatabaseSeeder implements CommandLineRunner {
 
         List<Student> students = List.of(
                 // Male Students (Index 1-10)
-                createStudent(1, "SE1001", "k18", "John Doe", softwareEngineering, 2, itDepartment, null),
+                createStudent(1, "SE1001", "k18", "Nguyễn Văn A", softwareEngineering, 2, itDepartment, null),
                 createStudent(2, "SE170042", "K17", "Trình Vĩnh Phát", softwareEngineering, 9, itDepartment, nodeJsSpecialist),
                 createStudent(3, "SE170440", "K17", "Đoàn Tiến Phát", softwareEngineering, 9, itDepartment, nodeJsSpecialist),
                 createStudent(4, "SE170225", "K17", "Vũ Ngọc Hải Đăng", softwareEngineering, 9, itDepartment, nodeJsSpecialist),
                 createStudent(5, "SE170431", "K17", "Nguyễn An Khánh", softwareEngineering, 9, itDepartment, nodeJsSpecialist),
-                createStudent(11, "SE1002", "k18", "Michael Smith", softwareEngineering, 3, itDepartment, null),
-                createStudent(12, "SE1003", "k18", "David Brown", softwareEngineering, 4, itDepartment, null),
-                createStudent(13, "SE1004", "k19", "Robert White", softwareEngineering, 2, itDepartment, null),
-                createStudent(14, "SE1005", "k19", "James Miller", softwareEngineering, 4, itDepartment, null),
-                createStudent(6, "SE1006", "k20", "William Johnson", softwareEngineering, 6, itDepartment, bridgeEngineer),
-                createStudent(7, "SE1007", "k20", "Thomas Anderson", softwareEngineering, 7, itDepartment, nodeJsSpecialist),
-                createStudent(8, "SE1008", "k17", "Charles Martinez", softwareEngineering, 9, itDepartment, bridgeEngineer),
-                createStudent(9, "SE1009", "k17", "Daniel Lewis", softwareEngineering, 9, itDepartment, nodeJsSpecialist),
-                createStudent(10, "SE1010", "k17", "Matthew Clark", softwareEngineering, 9, itDepartment, bridgeEngineer),
+                createStudent(11, "SE1002", "k18", "Nguyễn Minh Bảo", softwareEngineering, 3, itDepartment, null),
+                createStudent(12, "SE1003", "k18", "Phạm Gia Huy", softwareEngineering, 4, itDepartment, null),
+                createStudent(13, "SE1004", "k19", "Trần Quang Minh", softwareEngineering, 2, itDepartment, null),
+                createStudent(14, "SE1005", "k19", "Lê Đức Anh", softwareEngineering, 4, itDepartment, null),
+                createStudent(6, "SE1006", "k20", "Đỗ Phước Long", softwareEngineering, 6, itDepartment, bridgeEngineer),
+                createStudent(7, "SE1007", "k20", "Ngô Thành Đạt", softwareEngineering, 7, itDepartment, nodeJsSpecialist),
+                createStudent(8, "SE1008", "k17", "Bùi Hải Nam", softwareEngineering, 9, itDepartment, bridgeEngineer),
+                createStudent(9, "SE1009", "k17", "Nguyễn Duy Tân", softwareEngineering, 9, itDepartment, nodeJsSpecialist),
+                createStudent(10, "SE1010", "k17", "Trần Văn Lâm", softwareEngineering, 9, itDepartment, bridgeEngineer),
 
-
-                // Female Students (Index 11-20)
-                createStudent(15, "SE1011", "k18", "Emma Walker", softwareEngineering, 2, itDepartment, null),
-                createStudent(16, "SE1012", "k18", "Olivia Robinson", softwareEngineering, 3, itDepartment, null),
-                createStudent(17, "SE1013", "k18", "Ava Scott", softwareEngineering, 4, itDepartment, null),
-                createStudent(18, "SE1014", "k19", "Sophia Green", softwareEngineering, 2, itDepartment, null),
-                createStudent(19, "SE1015", "k19", "Isabella Harris", softwareEngineering, 4, itDepartment, null),
-                createStudent(20, "SE1016", "k20", "Mia Adams", softwareEngineering, 6, itDepartment, bridgeEngineer),
-                createStudent(21, "SE1017", "k20", "Charlotte Campbell", softwareEngineering, 7, itDepartment, nodeJsSpecialist),
-                createStudent(22, "SE1018", "k17", "Amelia Mitchell", softwareEngineering, 9, itDepartment, bridgeEngineer),
-                createStudent(23, "SE1019", "k17", "Evelyn Carter", softwareEngineering, 9, itDepartment, nodeJsSpecialist),
-                createStudent(24, "SE1020", "k17", "Abigail Roberts", softwareEngineering, 9, itDepartment, bridgeEngineer)
+// Female Students (Index 11-20)
+                createStudent(15, "SE1011", "k18", "Trần Thanh Hà", softwareEngineering, 2, itDepartment, null),
+                createStudent(16, "SE1012", "k18", "Nguyễn Thị Hương", softwareEngineering, 3, itDepartment, null),
+                createStudent(17, "SE1013", "k18", "Lê Thảo Vy", softwareEngineering, 4, itDepartment, null),
+                createStudent(18, "SE1014", "k19", "Phạm Thu Trang", softwareEngineering, 2, itDepartment, null),
+                createStudent(19, "SE1015", "k19", "Ngô Bích Ngọc", softwareEngineering, 4, itDepartment, null),
+                createStudent(20, "SE1016", "k20", "Đinh Lan Anh", softwareEngineering, 6, itDepartment, bridgeEngineer),
+                createStudent(21, "SE1017", "k20", "Lý Thị Quỳnh", softwareEngineering, 7, itDepartment, nodeJsSpecialist),
+                createStudent(22, "SE1018", "k17", "Phạm Hoàng Yến", softwareEngineering, 9, itDepartment, bridgeEngineer),
+                createStudent(23, "SE1019", "k17", "Nguyễn Mai Linh", softwareEngineering, 9, itDepartment, nodeJsSpecialist),
+                createStudent(24, "SE1020", "k17", "Đỗ Kim Hoa", softwareEngineering, 9, itDepartment, bridgeEngineer)
         );
 
         studentRepository.saveAll(students);
@@ -619,16 +618,17 @@ public class DatabaseSeeder implements CommandLineRunner {
         Specialization cryptography = specializationRepository.findByName("Cryptography").orElseThrow();
 
         List<Student> infoSecurityStudents = List.of(
-                createStudent(25, "IS1001", "k18", "Ethan Moore", infoSecurity, 2, itDepartment, null),
-                createStudent(26, "IS1002", "k18", "Logan Taylor", infoSecurity, 3, itDepartment, null),
-                createStudent(27, "IS1003", "k18", "Alexander Lee", infoSecurity, 5, itDepartment, null),
-                createStudent(28, "IS1004", "k19", "Sebastian Hall", infoSecurity, 6, itDepartment, networkSecurity),
-                createStudent(29, "IS1005", "k19", "Jackson Young", infoSecurity, 7, itDepartment, cryptography),
-                createStudent(30, "IS1006", "k19", "Mason Hernandez", infoSecurity, 8, itDepartment, networkSecurity),
-                createStudent(31, "IS1007", "k20", "Lucas King", infoSecurity, 9, itDepartment, cryptography),
-                createStudent(32, "IS1008", "k20", "Liam Wright", infoSecurity, 9, itDepartment, networkSecurity),
-                createStudent(33, "IS1009", "k20", "Henry Scott", infoSecurity, 9, itDepartment, cryptography),
-                createStudent(34, "IS1010", "k20", "Benjamin Carter", infoSecurity, 9, itDepartment, networkSecurity)
+                createStudent(25, "IS1001", "k18", "Nguyễn Văn A", infoSecurity, 2, itDepartment, null),
+                createStudent(26, "IS1002", "k18", "Trần Thị B", infoSecurity, 3, itDepartment, null),
+                createStudent(27, "IS1003", "k18", "Lê Văn C", infoSecurity, 5, itDepartment, null),
+                createStudent(28, "IS1004", "k19", "Phạm Thị D", infoSecurity, 6, itDepartment, networkSecurity),
+                createStudent(29, "IS1005", "k19", "Hoàng Văn E", infoSecurity, 7, itDepartment, cryptography),
+                createStudent(30, "IS1006", "k19", "Đinh Thị F", infoSecurity, 8, itDepartment, networkSecurity),
+                createStudent(31, "IS1007", "k20", "Ngô Văn G", infoSecurity, 9, itDepartment, cryptography),
+                createStudent(32, "IS1008", "k20", "Vũ Thị H", infoSecurity, 9, itDepartment, networkSecurity),
+                createStudent(33, "IS1009", "k20", "Phạm Văn I", infoSecurity, 9, itDepartment, cryptography),
+                createStudent(34, "IS1010", "k20", "Nguyễn Thị J", infoSecurity, 9, itDepartment, networkSecurity)
+
         );
 
         // Seed for Information Systems
@@ -637,16 +637,17 @@ public class DatabaseSeeder implements CommandLineRunner {
         Specialization enterpriseSystems = specializationRepository.findByName("Enterprise Systems").orElseThrow();
 
         List<Student> infoSystemsStudents = List.of(
-                createStudent(35, "ISY1001", "k18", "Charlotte Perez", infoSystems, 2, itDepartment, null),
-                createStudent(36, "ISY1002", "k18", "Harper Thompson", infoSystems, 3, itDepartment, null),
-                createStudent(37, "ISY1003", "k18", "Evelyn White", infoSystems, 5, itDepartment, null),
-                createStudent(38, "ISY1004", "k19", "Avery Ramirez", infoSystems, 6, itDepartment, databaseManagement),
-                createStudent(39, "ISY1005", "k19", "Scarlett Martinez", infoSystems, 7, itDepartment, enterpriseSystems),
-                createStudent(40, "ISY1006", "k19", "Luna Phillips", infoSystems, 8, itDepartment, databaseManagement),
-                createStudent(41, "ISY1007", "k20", "Ella Evans", infoSystems, 9, itDepartment, enterpriseSystems),
-                createStudent(42, "ISY1008", "k20", "Grace Turner", infoSystems, 9, itDepartment, databaseManagement),
-                createStudent(43, "ISY1009", "k20", "Chloe Parker", infoSystems, 9, itDepartment, enterpriseSystems),
-                createStudent(44, "ISY1010", "k20", "Isabella Collins", infoSystems, 9, itDepartment, databaseManagement)
+                createStudent(35, "ISY1001", "k18", "Nguyễn Thị Mai", infoSystems, 2, itDepartment, null),
+                createStudent(36, "ISY1002", "k18", "Trần Văn Nam", infoSystems, 3, itDepartment, null),
+                createStudent(37, "ISY1003", "k18", "Phạm Thu Hương", infoSystems, 5, itDepartment, null),
+                createStudent(38, "ISY1004", "k19", "Lê Minh Tú", infoSystems, 6, itDepartment, databaseManagement),
+                createStudent(39, "ISY1005", "k19", "Đặng Phương Thảo", infoSystems, 7, itDepartment, enterpriseSystems),
+                createStudent(40, "ISY1006", "k19", "Ngô Hải Anh", infoSystems, 8, itDepartment, databaseManagement),
+                createStudent(41, "ISY1007", "k20", "Hoàng Anh Dũng", infoSystems, 9, itDepartment, enterpriseSystems),
+                createStudent(42, "ISY1008", "k20", "Vũ Thị Lan", infoSystems, 9, itDepartment, databaseManagement),
+                createStudent(43, "ISY1009", "k20", "Bùi Văn Hòa", infoSystems, 9, itDepartment, enterpriseSystems),
+                createStudent(44, "ISY1010", "k20", "Đinh Thị Bích", infoSystems, 9, itDepartment, databaseManagement)
+
         );
 
         // Seed for Artificial Intelligence
@@ -655,16 +656,17 @@ public class DatabaseSeeder implements CommandLineRunner {
         Specialization nlp = specializationRepository.findByName("Natural Language Processing").orElseThrow();
 
         List<Student> aiStudents = List.of(
-                createStudent(45, "AI1001", "k18", "Oliver Brown", ai, 2, itDepartment, null),
-                createStudent(46, "AI1002", "k18", "James Harris", ai, 3, itDepartment, null),
-                createStudent(47, "AI1003", "k18", "William Jones", ai, 5, itDepartment, null),
-                createStudent(48, "AI1004", "k19", "Henry Wilson", ai, 6, itDepartment, machineLearning),
-                createStudent(49, "AI1005", "k19", "Leo Robinson", ai, 7, itDepartment, nlp),
-                createStudent(50, "AI1006", "k19", "Jack Walker", ai, 8, itDepartment, machineLearning),
-                createStudent(51, "AI1007", "k20", "Luke Allen", ai, 9, itDepartment, nlp),
-                createStudent(52, "AI1008", "k20", "Alexander Cook", ai, 9, itDepartment, machineLearning),
-                createStudent(53, "AI1009", "k20", "Jacob Kelly", ai, 9, itDepartment, nlp),
-                createStudent(54, "AI1010", "k20", "Thomas Reed", ai, 9, itDepartment, machineLearning)
+                createStudent(45, "AI1001", "k18", "Nguyễn Văn Bình", ai, 2, itDepartment, null),
+                createStudent(46, "AI1002", "k18", "Trần Minh Hoàng", ai, 3, itDepartment, null),
+                createStudent(47, "AI1003", "k18", "Lê Văn Long", ai, 5, itDepartment, null),
+                createStudent(48, "AI1004", "k19", "Phạm Anh Dũng", ai, 6, itDepartment, machineLearning),
+                createStudent(49, "AI1005", "k19", "Đỗ Quang Huy", ai, 7, itDepartment, nlp),
+                createStudent(50, "AI1006", "k19", "Hoàng Gia Bảo", ai, 8, itDepartment, machineLearning),
+                createStudent(51, "AI1007", "k20", "Vũ Hữu Phước", ai, 9, itDepartment, nlp),
+                createStudent(52, "AI1008", "k20", "Ngô Trung Kiên", ai, 9, itDepartment, machineLearning),
+                createStudent(53, "AI1009", "k20", "Bùi Đức Minh", ai, 9, itDepartment, nlp),
+                createStudent(54, "AI1010", "k20", "Dương Tấn Lộc", ai, 9, itDepartment, machineLearning)
+
         );
 
         // Save all students
@@ -712,15 +714,15 @@ public class DatabaseSeeder implements CommandLineRunner {
     }
 
     private void seedStudentsForMajor(int number, Major major, Specialization specialization1, Specialization specialization2) {
-        // 3 students without specialization (not in the 6th semester)
-        studentRepository.save(createStudent(number + 1, major.getCode() + "01", "k17", "Student 1", major, 2, major.getDepartment(), null));
-        studentRepository.save(createStudent(number + 2, major.getCode() + "02", "k18", "Student 2", major, 2, major.getDepartment(), null));
-        studentRepository.save(createStudent(number + 3, major.getCode() + "03", "k19", "Student 3", major, 2, major.getDepartment(), null));
+        // 3 sinh viên không có chuyên ngành (không ở học kỳ 6)
+        studentRepository.save(createStudent(number + 1, major.getCode() + "01", "k17", "Nguyễn Văn A", major, 2, major.getDepartment(), null));
+        studentRepository.save(createStudent(number + 2, major.getCode() + "02", "k18", "Trần Thị B", major, 2, major.getDepartment(), null));
+        studentRepository.save(createStudent(number + 3, major.getCode() + "03", "k19", "Lê Minh C", major, 2, major.getDepartment(), null));
 
-        // 7 students with specialization
-        studentRepository.save(createStudent(number + 4, major.getCode() + "04", "k19", "Student 4", major, 2, major.getDepartment(), specialization1));
-        studentRepository.save(createStudent(number + 5, major.getCode() + "05", "k20", "Student 5", major, 2, major.getDepartment(), specialization1));
-        studentRepository.save(createStudent(number + 6, major.getCode() + "06", "k20", "Student 6", major, 2, major.getDepartment(), specialization2));
+// 7 sinh viên có chuyên ngành
+        studentRepository.save(createStudent(number + 4, major.getCode() + "04", "k19", "Phạm Thị D", major, 2, major.getDepartment(), specialization1));
+        studentRepository.save(createStudent(number + 5, major.getCode() + "05", "k20", "Vũ Văn E", major, 2, major.getDepartment(), specialization1));
+        studentRepository.save(createStudent(number + 6, major.getCode() + "06", "k20", "Đặng Thị F", major, 2, major.getDepartment(), specialization2));
 //        studentRepository.save(createStudent(number + 7, major.getCode() + "07", "k20", "Student 7", major, 7, major.getDepartment(), specialization2));
 //        studentRepository.save(createStudent(number + 8, major.getCode() + "08", "k21", "Student 8", major, 8, major.getDepartment(), specialization1));
 //        studentRepository.save(createStudent(number + 9, major.getCode() + "09", "k21", "Student 9", major, 8, major.getDepartment(), specialization2));
